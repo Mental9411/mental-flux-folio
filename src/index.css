@@ -71,22 +71,25 @@ All colors MUST be HSL for proper theming.
     --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
   /* Custom Utility Classes */
   .gradient-text {
     background: var(--gradient-primary);
@@ -115,27 +118,17 @@ All colors MUST be HSL for proper theming.
     animation: float 6s ease-in-out infinite;
   }
 
-  @keyframes float {
-    0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-20px); }
-  }
-
   .glow-pulse {
     animation: glow 2s ease-in-out infinite alternate;
   }
-
-  @keyframes glow {
-    from { box-shadow: 0 0 20px hsl(var(--primary) / 0.2); }
-    to { box-shadow: 0 0 40px hsl(var(--primary) / 0.5); }
-  }
 }
 
-@layer base {
-  * {
-    @apply border-border;
-  }
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
 
-  body {
-    @apply bg-background text-foreground;
-  }
+@keyframes glow {
+  from { box-shadow: 0 0 20px hsl(var(--primary) / 0.2); }
+  to { box-shadow: 0 0 40px hsl(var(--primary) / 0.5); }
 }
