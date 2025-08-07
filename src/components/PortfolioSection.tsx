@@ -6,50 +6,32 @@ const PortfolioSection = () => {
 
   const projects = [
     {
-      title: "Fitness Brand Identity",
+      title: "Fitness Startup Brand Identity",
       category: "Design",
-      description: "Complete brand identity for a fitness startup – logo, color palette, social assets, and more.",
+      description: "Complete brand identity package including logos, color palette, social media assets, and comprehensive branding guidelines.",
       image: "🏋️",
       gradient: "from-primary to-electric-pink",
+      features: ["Logo Design", "Social Assets", "Brand Guidelines", "Color Palette"]
     },
     {
-      title: "Tech Fest Highlight Reel",
+      title: "University Tech Fest Highlight Reel",
       category: "Video",
-      description: "3-minute tech fest highlight reel – beat-synced transitions, motion graphics, and dual-format delivery.",
+      description: "3-minute highlight reel with beat-synced transitions, motion graphics, and dual-format delivery for social platforms.",
       image: "🎯",
       gradient: "from-electric-pink to-electric-green",
+      features: ["Motion Graphics", "Beat Sync", "Color Grading", "Multi-format Export"]
     },
     {
-      title: "Fintech Education App",
+      title: "Gamified Financial Literacy App",
       category: "UI/UX",
-      description: "Fintech education app – gamified, multilingual, accessible, with dark/light mode support.",
+      description: "Mobile app UI/UX design featuring gamification, multilingual support, accessibility features, and dark/light mode.",
       image: "💳",
       gradient: "from-electric-green to-electric-purple",
-    },
-    {
-      title: "E-commerce Security Audit",
-      category: "Security",
-      description: "Comprehensive security audit and penetration testing for a major e-commerce platform.",
-      image: "🛡️",
-      gradient: "from-electric-purple to-primary",
-    },
-    {
-      title: "Restaurant Menu App",
-      category: "UI/UX",
-      description: "Modern restaurant ordering app with seamless UX and beautiful food photography integration.",
-      image: "🍽️",
-      gradient: "from-primary to-electric-green",
-    },
-    {
-      title: "Corporate Video Series",
-      category: "Video",
-      description: "Professional corporate video series with motion graphics and consistent branding across 5 episodes.",
-      image: "🎥",
-      gradient: "from-electric-pink to-electric-purple",
+      features: ["Mobile UI/UX", "Gamification", "Dark/Light Mode", "Accessibility"]
     },
   ];
 
-  const filters = ["All", "Design", "Video", "UI/UX", "Security"];
+  const filters = ["All", "Design", "Video", "UI/UX"];
 
   const filteredProjects = activeFilter === "All" 
     ? projects 
@@ -110,9 +92,21 @@ const PortfolioSection = () => {
                   {project.title}
                 </h3>
                 
-                <p className="text-muted-foreground text-sm leading-relaxed">
+                <p className="text-muted-foreground text-sm leading-relaxed mb-4">
                   {project.description}
                 </p>
+
+                {/* Features */}
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {project.features.map((feature, idx) => (
+                    <span 
+                      key={idx}
+                      className="text-xs px-2 py-1 bg-muted rounded-md text-muted-foreground"
+                    >
+                      {feature}
+                    </span>
+                  ))}
+                </div>
 
                 {/* View Project Link */}
                 <div className="pt-4">

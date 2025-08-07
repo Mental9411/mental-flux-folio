@@ -25,17 +25,16 @@ const AboutSection = () => {
           <div className="space-y-6">
             <div className="cyber-card p-8 rounded-2xl">
               <h3 className="font-cyber font-bold text-2xl text-primary mb-4">
-                Who I Am
+                About Mental
               </h3>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                Hi, I'm Mental — a creative multitasker blending art and tech. I'm a 
-                <span className="text-primary"> Graphic Designer</span>, 
-                <span className="text-electric-pink"> Videographer</span>, and 
-                <span className="text-electric-green"> Video Editor</span> with a passion for visual storytelling.
+                Mental is a creative multitasker blending the worlds of art and technology. With over 3 years of freelance experience in graphic design, video editing, web development, and ethical hacking, he excels at delivering visually compelling and technically secure solutions.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mb-6">
+                Skilled in tools like Adobe Photoshop, Premiere Pro, After Effects, ReactJS, and cybersecurity practices, he offers a powerful mix of creative vision and coding expertise. His work showcases a deep passion for visual storytelling, user experience, and digital safety.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                I also wear the hats of an <span className="text-electric-purple">Ethical Hacker</span> and 
-                <span className="text-primary"> Coder</span>, bridging the gap between creativity and cybersecurity.
+                The unique fusion of <span className="text-electric-pink">creativity</span> and <span className="text-electric-green">cybersecurity</span> sets Mental apart in delivering solutions that are both beautiful and secure.
               </p>
             </div>
 

@@ -3,25 +3,25 @@ const ServicesSection = () => {
     {
       title: "Web Design",
       icon: "🌐",
-      description: "Responsive and visually stunning web design with intuitive UX/UI built using modern stacks like React.js.",
+      description: "Modern, responsive, user-focused websites built with ReactJS and security-first principles.",
       gradient: "from-primary to-electric-pink",
     },
     {
       title: "Video Editing",
       icon: "🎬",
-      description: "Cinematic edits, motion graphics, social media reels, promotional content with Adobe Premiere Pro and After Effects.",
+      description: "Cinematic, story-driven edits tailored for YouTube, Instagram, or corporate reels.",
       gradient: "from-electric-pink to-electric-green",
     },
     {
       title: "Graphic Design",
       icon: "🎨",
-      description: "Complete brand identity, logo design, visual assets, and creative solutions that make your brand stand out.",
+      description: "Visual brand identity, logos, and creative assets that tell your story with impact.",
       gradient: "from-electric-green to-electric-purple",
     },
     {
       title: "Cybersecurity",
       icon: "🔒",
-      description: "Ethical hacking, security audits, and protective measures to keep your digital assets safe and secure.",
+      description: "Ethical hacking, security audits, and protective measures for your digital assets.",
       gradient: "from-electric-purple to-primary",
     },
   ];

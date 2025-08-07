@@ -42,7 +42,7 @@ const HeroSection = () => {
 
       {/* Main Content */}
       <div className="relative z-10 text-center max-w-4xl mx-auto px-6">
-        {/* Greeting */}
+        {/* Greeting & Name */}
         <div className="mb-6">
           <p className="text-lg font-modern text-muted-foreground mb-2">
             Hello, I'm
@@ -50,16 +50,19 @@ const HeroSection = () => {
           <h1 className="font-cyber font-black text-6xl md:text-8xl gradient-text mb-4">
             MENTAL
           </h1>
-          <p className="text-xl md:text-2xl font-modern text-foreground mb-8">
-            where <span className="text-primary">art</span> meets <span className="text-electric-pink">code</span>
+          <p className="text-xl md:text-2xl font-modern text-foreground mb-2">
+            Blending <span className="text-primary">Art</span> & <span className="text-electric-pink">Tech</span>
+          </p>
+          <p className="text-lg font-modern text-muted-foreground">
+            Graphic Designer • Video Editor • Ethical Hacker
           </p>
         </div>
 
         {/* Bio */}
         <p className="text-lg font-modern text-muted-foreground max-w-2xl mx-auto mb-12 leading-relaxed">
-          Designer with 3+ years experience sketching, building and 
-          coaching. I love fun UI, collaboration and making helpful 
-          products that connect people.
+          Mental is a creative multitasker blending the worlds of art and technology. 
+          With over 3 years of freelance experience, he excels at delivering visually 
+          compelling and technically secure solutions.
         </p>
 
         {/* CTA Buttons */}
@@ -68,14 +71,14 @@ const HeroSection = () => {
             onClick={() => scrollToSection("portfolio")}
             className="bg-primary hover:bg-primary-glow text-primary-foreground font-medium px-8 py-3 neon-glow"
           >
-            View Portfolio
+            View My Work
           </Button>
           <Button
             onClick={() => scrollToSection("contact")}
             variant="outline"
             className="border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-3"
           >
-            Hire Me
+            Contact Me
           </Button>
         </div>
 
